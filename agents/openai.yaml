@@ -1,0 +1,8 @@
+interface:
+  display_name: "微信公众号封面艺术指导"
+  short_description: "从文章内容发散生成吸睛、美观且风格真正不同的公众号封面"
+  brand_color: "#F2A65A"
+  default_prompt: "Use $wechat-cover-art-director to read this article and generate five genuinely different WeChat cover directions."
+
+policy:
+  allow_implicit_invocation: true
