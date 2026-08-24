@@ -115,3 +115,17 @@ description: 为中文微信公众号文章从零策划并生成多套发散、�
 5. 若用户同时说明喜欢或不喜欢的原因，更新偏好或拒绝模式。
 
 新增淘汰案例时：图片可获得则复制到 `assets/rejected-covers/<batch>/`，最终提示词复制到 `references/rejected-prompts/<batch>/`，并更新负向索引。批次淘汰但缺少逐张原因时，标注证据强度，不擅自编造具体失败原因。
+
+## GitHub 同步纪律
+
+本 Skill 的公开远程仓库是 `https://github.com/Stephen-creater/wechat-cover-art-director`，默认分支是 `main`。
+
+任何对本 Skill 文件夹的修改，包括图片、案例、提示词、偏好、路由、正负索引和入口规则，都必须在同一任务闭环中完成：
+
+1. 验证文件、数量、引用和敏感信息。
+2. 检查 `git status` 与暂存差异。
+3. 创建有意义的 Git commit。
+4. 推送到 `origin/main`。
+5. 从 GitHub 读回仓库可见性、远程提交和关键文件，确认远程状态真实更新。
+
+存在未提交或未推送的 Skill 变更时，不得向用户声称 Skill 更新完成。除非用户明确要求只做本地草稿，否则不省略 commit 或 push。
