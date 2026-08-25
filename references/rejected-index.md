@@ -2,8 +2,8 @@
 
 ## 资产规模
 
-- 可用淘汰图片：42 张
-- 已保存淘汰提示词：36 个文件，覆盖 69 个方向
+- 可用淘汰图片：49 张
+- 已保存淘汰提示词：37 个文件，覆盖 76 个方向
 - 淘汰图片：`../assets/rejected-covers/`
 - 淘汰提示词：`rejected-prompts/`
 
@@ -83,3 +83,10 @@ NB2-02、03、04、05、06、08、09、10 全部批次淘汰。已保存芯片�
 - 图片位置：`assets/rejected-covers/round6/`。
 - 提示词摘要：`references/rejected-prompts/round6/R6-ai-emergence-rejected-prompts.md`。
 - E01、R04、R05 分别为强正向、正常通过、弱正向，不属于反例。
+
+## Round 7《AI普及是个「神话」》
+
+- 有图反例 7 张：R02、R03、R04、E01、E03、E04、E05。
+- 图片位置：`assets/rejected-covers/round7/`。
+- 提示词摘要：`references/rejected-prompts/round7/R7-ai-adoption-myth-rejected-prompts.md`。
+- R05 为强正向；R01 与 E02 为弱正向，不属于反例。
