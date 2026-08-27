@@ -30,3 +30,5 @@
 | A24 | AI普及是个「神话」 | 弱正向, 短标题, 杠铃分布 | 瑞士网格, 超大字, 递减柱, 极简关系 | 米白, 深蓝, 钴蓝, 朱红, 浅灰 | `cases/A24-ai-adoption-swiss-barbell.md` |
 | A25 | AI普及是个「神话」 | 强正向, 实际采纳, 杠铃分布, 企业AI | 左文右物, 不对称实体杠铃, 极端配重 | 暖灰白, 深蓝, 黄铜金, 石材灰 | `cases/A25-ai-adoption-object-barbell.md` |
 | A26 | AI普及是个「神话」 | 弱正向, 双峰分布, 企业AI | 标题压顶, 小金峰, 大蓝灰平台, 空谷 | 浅灰白, 深蓝, 金色, 蓝灰 | `cases/A26-ai-adoption-double-peak.md` |
+| A27 | FDE做Demo前，先把 4 笔账算清楚 | 正常通过, FDE, 四笔账, 前置条件 | 左文右物, 四个圆柱支点, 石板, Demo 模型 | 暖灰白, 深蓝, 米色, 金, 透明蓝 | `cases/A27-fde-four-support-weights.md` |
+| A28 | FDE做Demo前，先把 4 笔账算清楚 | 正常通过, FDE, 四笔账, 前置条件 | 图上文下, 四块材质基座, 共同承托, 展览尺度 | 暖白, 深蓝, 石材灰, 金, 透明蓝 | `cases/A28-fde-four-ledger-slabs.md` |

@@ -2,8 +2,8 @@
 
 ## 资产规模
 
-- 可用淘汰图片：49 张
-- 已保存淘汰提示词：37 个文件，覆盖 76 个方向
+- 可用淘汰图片：57 张
+- 已保存淘汰提示词：38 个文件，覆盖 84 个方向
 - 淘汰图片：`../assets/rejected-covers/`
 - 淘汰提示词：`rejected-prompts/`
 
@@ -90,3 +90,10 @@ NB2-02、03、04、05、06、08、09、10 全部批次淘汰。已保存芯片�
 - 图片位置：`assets/rejected-covers/round7/`。
 - 提示词摘要：`references/rejected-prompts/round7/R7-ai-adoption-myth-rejected-prompts.md`。
 - R05 为强正向；R01 与 E02 为弱正向，不属于反例。
+
+## Round 8《FDE做Demo前，先把 4 笔账算清楚》
+
+- 有图反例 8 张：R01、R02、R05、E01、E02、E03、E04、E05。
+- 图片位置：`assets/rejected-covers/round8/`。
+- 提示词摘要：`references/rejected-prompts/round8/R8-fde-four-accounts-rejected-prompts.md`。
+- R03 与 R04 为正常通过，不属于反例。
