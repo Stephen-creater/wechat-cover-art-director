@@ -172,3 +172,17 @@
 - 淘汰摘要保存在 `references/rejected-prompts/round8/R8-fde-four-accounts-rejected-prompts.md`。
 - 用户未说明逐张原因，只禁止直接复刻。
 - 通过案例的共同点不是“四个对象”，而是“四项条件共同承托一个 Demo 结果”；后续优先复用承重因果，避免并列清单化。
+
+## R11《下一个5年，做业务的版本答案：掌握行业Harness》Round 1
+
+时间：2026-08-30
+
+用户从 10 张中通过 4 张：R01、R04、R05、E02，归档为 A29–A32。其余 6 张全部淘汰：R02、R03、E01、E03、E04、E05。
+
+处理规则：
+
+- 6 张反例图片保存在 `assets/rejected-covers/round9/`。
+- 淘汰摘要保存在 `references/rejected-prompts/round9/R9-industry-harness-rejected-prompts.md`。
+- 用户未说明六张反例的逐张原因，只禁止直接复刻。
+- E02 的视觉主体被认可，但标题换行被明确否定：必须把“做业务的版本答案”保留为完整一行，不能让第三行拥挤。
+- 本轮说明视觉元素与排版必须分别打标；元素通过不代表模板排版也通过。

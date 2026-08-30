@@ -32,3 +32,7 @@
 | A26 | AI普及是个「神话」 | 弱正向, 双峰分布, 企业AI | 标题压顶, 小金峰, 大蓝灰平台, 空谷 | 浅灰白, 深蓝, 金色, 蓝灰 | `cases/A26-ai-adoption-double-peak.md` |
 | A27 | FDE做Demo前，先把 4 笔账算清楚 | 正常通过, FDE, 四笔账, 前置条件 | 左文右物, 四个圆柱支点, 石板, Demo 模型 | 暖灰白, 深蓝, 米色, 金, 透明蓝 | `cases/A27-fde-four-support-weights.md` |
 | A28 | FDE做Demo前，先把 4 笔账算清楚 | 正常通过, FDE, 四笔账, 前置条件 | 图上文下, 四块材质基座, 共同承托, 展览尺度 | 暖白, 深蓝, 石材灰, 金, 透明蓝 | `cases/A28-fde-four-ledger-slabs.md` |
+| A29 | 下一个5年，做业务的版本答案：掌握行业Harness | 正常通过, 行业Harness, FDE, 业务系统 | 中央标题, 左工业齿轮, 右数据线束, 冷暖锁合 | 深钴蓝, 珊瑚红, 青蓝, 金色 | `cases/A29-industry-harness-business-system.md` |
+| A30 | 下一个5年，做业务的版本答案：掌握行业Harness | 正常通过, 行业Harness, 科技杂志 | 超大三行标题, 蓝金结构带, 明亮编辑网格 | 米白, 钴蓝, 朱红, 金色 | `cases/A30-industry-harness-magazine.md` |
+| A31 | 下一个5年，做业务的版本答案：掌握行业Harness | 正常通过, 固体智能, 行业Harness | 左文右物, 工业层理, 蓝金机械核心 | 暖白, 深蓝, 蓝黑, 旧金 | `cases/A31-industry-harness-layered-core.md` |
+| A32 | 下一个5年，做业务的版本答案：掌握行业Harness | 条件通过, 固体智能, 老兵+AI, 排版反例 | 左文右手, 工匠手部, 精密工具, 透明外骨骼 | 暖灰白, 深蓝, 金色, 肤色 | `cases/A32-industry-harness-veteran-hand.md` |

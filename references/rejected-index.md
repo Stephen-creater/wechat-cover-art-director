@@ -2,8 +2,8 @@
 
 ## 资产规模
 
-- 可用淘汰图片：57 张
-- 已保存淘汰提示词：38 个文件，覆盖 84 个方向
+- 可用淘汰图片：63 张
+- 已保存淘汰提示词：39 个文件，覆盖 90 个方向
 - 淘汰图片：`../assets/rejected-covers/`
 - 淘汰提示词：`rejected-prompts/`
 
@@ -97,3 +97,10 @@ NB2-02、03、04、05、06、08、09、10 全部批次淘汰。已保存芯片�
 - 图片位置：`assets/rejected-covers/round8/`。
 - 提示词摘要：`references/rejected-prompts/round8/R8-fde-four-accounts-rejected-prompts.md`。
 - R03 与 R04 为正常通过，不属于反例。
+
+## Round 9 行业 Harness 文章
+
+- 有图反例 6 张：R02、R03、E01、E03、E04、E05。
+- 图片位置：`assets/rejected-covers/round9/`。
+- 提示词摘要：`references/rejected-prompts/round9/R9-industry-harness-rejected-prompts.md`。
+- R01、R04、R05 与 E02 进入正向库；E02 的原排版问题记录在 A32 与质量门中。
