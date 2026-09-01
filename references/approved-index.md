@@ -36,3 +36,8 @@
 | A30 | 下一个5年，做业务的版本答案：掌握行业Harness | 正常通过, 行业Harness, 科技杂志 | 超大三行标题, 蓝金结构带, 明亮编辑网格 | 米白, 钴蓝, 朱红, 金色 | `cases/A30-industry-harness-magazine.md` |
 | A31 | 下一个5年，做业务的版本答案：掌握行业Harness | 正常通过, 固体智能, 行业Harness | 左文右物, 工业层理, 蓝金机械核心 | 暖白, 深蓝, 蓝黑, 旧金 | `cases/A31-industry-harness-layered-core.md` |
 | A32 | 下一个5年，做业务的版本答案：掌握行业Harness | 条件通过, 固体智能, 老兵+AI, 排版反例 | 左文右手, 工匠手部, 精密工具, 透明外骨骼 | 暖灰白, 深蓝, 金色, 肤色 | `cases/A32-industry-harness-veteran-hand.md` |
+| A33 | AI应用可能是笔烂生意 | 强正向, 实际采纳, AI应用, 增长反噬 | 瑞士网格, 超大字, 上升线, 下坠楔形 | 暖米白, 深蓝, 钴蓝, 朱红 | `cases/A33-ai-app-swiss-growth-loss.md` |
+| A34 | AI应用可能是笔烂生意 | 正常通过, AI应用, 规模化亏损 | 左文右物, 油门, 金币泄漏, 高调摄影 | 暖灰白, 深蓝, 金属银, 黄铜金 | `cases/A34-ai-app-accelerator-coin-leak.md` |
+| A35 | AI应用可能是笔烂生意 | 正常通过, AI应用, 三项风险, 共同承重 | 左文右物, 石基, 弹簧, 锚索, 透明容器 | 暖白, 深蓝, 石材灰, 黄铜金, 透明蓝 | `cases/A35-ai-app-three-supports.md` |
+| A36 | AI应用可能是笔烂生意 | 正常通过, AI应用, 平台压力, 大厂入口 | 微小实体, 巨大阴影, 硬光投影, 收窄空间 | 暖灰白, 深蓝, 冰蓝, 暖色轮廓 | `cases/A36-ai-app-platform-shadow.md` |
+| A37 | AI应用可能是笔烂生意 | 正常通过, AI应用, 增长反噬, 规模伤害 | 金属轮, 对角运动, 材料沟槽, 宏观摄影 | 暖白, 深蓝, 钴蓝, 朱红, 金色 | `cases/A37-ai-app-growth-wheel-trench.md` |

@@ -2,8 +2,8 @@
 
 ## 资产规模
 
-- 可用淘汰图片：63 张
-- 已保存淘汰提示词：39 个文件，覆盖 90 个方向
+- 可用淘汰图片：65 张
+- 已保存淘汰提示词：40 个文件，覆盖 92 个方向
 - 淘汰图片：`../assets/rejected-covers/`
 - 淘汰提示词：`rejected-prompts/`
 
@@ -104,3 +104,11 @@ NB2-02、03、04、05、06、08、09、10 全部批次淘汰。已保存芯片�
 - 图片位置：`assets/rejected-covers/round9/`。
 - 提示词摘要：`references/rejected-prompts/round9/R9-industry-harness-rejected-prompts.md`。
 - R01、R04、R05 与 E02 进入正向库；E02 的原排版问题记录在 A32 与质量门中。
+
+## Round 10《AI应用可能是笔烂生意》
+
+- 有图明确反例 2 张：E03、E05。
+- 图片位置：`assets/rejected-covers/round10/`。
+- 提示词与用户原始原因：`references/rejected-prompts/round10/R10-ai-app-bad-business-rejected-prompts.md`。
+- E03：字被压低，红线与撕纸组合显得奇怪；不扩大为对全部字体/纸张媒介的否定。
+- E05：左右视觉对象与关系无法看懂；不扩大为对全部气球、船或超现实摄影的否定。

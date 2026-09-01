@@ -4,7 +4,7 @@
 
 标题原文：`AI应用可能是笔烂生意`
 
-本批共 10 张 16:9 PNG，前 5 张复用已验证模板方法，后 5 张探索未覆盖视觉空间。所有候选仍处于用户筛选阶段，没有写入正向案例库。
+本批共 10 张 16:9 PNG，前 5 张复用已验证模板方法，后 5 张探索未覆盖视觉空间。用户已经完成首轮筛选，结果已同步到 Skill 的正向、负向和中性反馈记录。
 
 ## 复用组
 
@@ -33,6 +33,13 @@
 - 已用 `contact-sheet.png` 做统一缩略图检查；十张在主体、媒介、构图和空间关系上均可区分。
 - 深色背景仅 R05 一张，其余均为亮色或高调摄影。
 - E03 第一版的红线穿过文字，已针对性重生成；最终版红线完全退出文字区。第一版仅保存在忽略版本控制的 `work/` 中。
-- 本批未修改 `assets/approved-covers/`、`references/cases/`、`references/approved-index.md`、`references/preferences.md` 或 `references/router.md`。
+- 生成阶段没有提前修改正向案例库；用户完成筛选后，才按下方结果更新 `assets/approved-covers/`、案例、路由、偏好与负向记录。
 
 完整生成提示词见 `prompts.md`。
+
+## 用户筛选结果
+
+- 强正向、最终采纳：R01 → A33。
+- 正常通过：R02 → A34，R04 → A35，E01 → A36，E02 → A37。
+- 中性、不进正负库：R03、R05、E04。
+- 明确负向：E03、E05；原始原因与处理边界见 `references/feedback/round10-ai-app-bad-business.md`。
