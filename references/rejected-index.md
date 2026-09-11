@@ -2,8 +2,8 @@
 
 ## 资产规模
 
-- 可用淘汰图片：65 张
-- 已保存淘汰提示词：40 个文件，覆盖 92 个方向
+- 可用淘汰图片：73 张
+- 已保存淘汰提示词：41 个文件，覆盖 100 个方向
 - 淘汰图片：`../assets/rejected-covers/`
 - 淘汰提示词：`rejected-prompts/`
 
@@ -112,3 +112,11 @@ NB2-02、03、04、05、06、08、09、10 全部批次淘汰。已保存芯片�
 - 提示词与用户原始原因：`references/rejected-prompts/round10/R10-ai-app-bad-business-rejected-prompts.md`。
 - E03：字被压低，红线与撕纸组合显得奇怪；不扩大为对全部字体/纸张媒介的否定。
 - E05：左右视觉对象与关系无法看懂；不扩大为对全部气球、船或超现实摄影的否定。
+
+## Round 11《曾鸣谈AI新范式》
+
+- 有图反例 8 张：R01、R02、R03、R05、E02、E03、E04、E05。
+- 图片位置：`assets/rejected-covers/round11/`。
+- 提示词摘要：`references/rejected-prompts/round11/R11-organization-from-role-to-task-rejected-prompts.md`。
+- 用户未给逐张原因；首轮复用组的批次级问题是文字多、文字和配图搭配不够合理美观。
+- E01 进入强正向 A38，R04 进入弱正向 A39，不属于反例。
