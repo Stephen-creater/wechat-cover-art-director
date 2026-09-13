@@ -1,23 +1,6 @@
-# Repository operating rules
+# 封面项目规则
 
-These rules apply to the entire `wechat-cover-art-director` repository.
-
-## Preserve user work
-
-- Preserve all existing user content and unrelated changes. Do not overwrite, delete, reformat, or reorganize files outside the explicitly requested scope.
-- Before editing, inspect `git status` and the relevant files. If unrelated changes exist, keep them intact and commit only the files produced by the current task.
-- A candidate cover that the user has not explicitly adopted, approved, or used must not enter `assets/approved-covers/`, `references/cases/`, `references/approved-index.md`, or any other positive case or routing record.
-- When the user rejects a batch without giving per-image reasons, record only the batch-level rejection evidence. Never invent a reason for an individual image.
-
-## Local verification before version control
-
-- The local Skill repository and GitHub `main` must remain synchronized.
-- Any change to images, examples, prompts, preferences, routing, rules, indexes, documentation, or repository metadata must be validated locally before it is committed.
-- At minimum, verify file existence and references, inspect `git diff`, inspect `git status`, and check that no credentials, private source material, generated candidates, or unrelated user changes are included.
-
-## Commit, push, and remote readback
-
-- Every completed repository change must have a meaningful Git commit and be pushed to `origin/main` in the same task, unless the user explicitly requests a local-only draft.
-- After pushing, read back the remote `main` commit hash and the changed key files from GitHub. Confirm that the remote content, not merely the local working tree or push command output, contains the intended update.
-- Do not claim completion while any task change is uncommitted, unpushed, absent from remote `main`, or not verified by remote readback.
-- Keep local `main`, `origin/main`, and GitHub `main` aligned at task completion.
+- 未经用户采用、确认或使用的候选，不得进入 `assets/approved-covers/`、`references/cases/`、`references/approved-index.md` 或其他正例记录。
+- 整批被驳回但无逐图理由时，只记录批次事实，不推断单图原因。
+- 保留无关用户改动。按本次改动核对文件、引用和差异；凭据、私有素材与未采用候选不得提交。
+- 每次完成项目变更后，精确暂存本次文件、commit 并 push 到 `origin/main`（用户要求本地草稿除外）。读回远端提交和关键文件，确认本地、origin/main 与 GitHub main 一致后报告完成。
