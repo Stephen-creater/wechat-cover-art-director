@@ -3,7 +3,7 @@
 ## 资产规模
 
 - 可用淘汰图片：73 张
-- 已保存淘汰提示词：41 个文件，覆盖 100 个方向
+- 已保存淘汰提示词：42 个文件，覆盖 105 个方向
 - 淘汰图片：`../assets/rejected-covers/`
 - 淘汰提示词：`rejected-prompts/`
 
@@ -120,3 +120,10 @@ NB2-02、03、04、05、06、08、09、10 全部批次淘汰。已保存芯片�
 - 提示词摘要：`references/rejected-prompts/round11/R11-organization-from-role-to-task-rejected-prompts.md`。
 - 用户未给逐张原因；首轮复用组的批次级问题是文字多、文字和配图搭配不够合理美观。
 - E01 进入强正向 A38，R04 进入弱正向 A39，不属于反例。
+
+## Round 12 手机 Memory
+
+- E02、E05、R01、R04、R05：5 个方向批次淘汰；未给逐图原因。
+- [完整负向提示词](rejected-prompts/round12/R12-phone-memory.md)。
+- 按现行 AGENTS，未采用图片仅保留本地，本轮不增加云端有图反例数（仍为 73 张）。
+- E03、E01、E04、R02、R03 明确采纳，归档为 A40–A44。

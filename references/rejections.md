@@ -213,3 +213,7 @@
 - 本轮最高价值结论是长标题排版：按小引题、主判断、解释层建立字号层级，只放大核心判断；不要把标题压成三行等权文字墙。
 - A39 只达到 60 分，其阴影与留白可以单维借用，原排版不进入默认路由。
 - 完整反馈证据保存在 `references/feedback/round11-organization-from-role-to-task.md`。
+
+## R14 手机 Memory（2026-09-14）
+
+用户明确采纳 E03、E01、E04、R02、R03，评价“还不错”；其余 E02、E05、R01、R04、R05 淘汰。用户未给逐图原因，只记批次事实，禁止直接重跑原组合，不补写失败原因。负向提示词见 [Round 12](rejected-prompts/round12/R12-phone-memory.md)，完整反馈见 [反馈档案](feedback/round12-phone-memory.md)。未采用图片保留本地，不提交。
