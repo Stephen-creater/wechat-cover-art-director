@@ -1,6 +1,6 @@
 ---
 name: wechat-cover-art-director
-description: "为中文公众号文章策划并生成多套封面，按用户反馈迭代。"
+description: "为中文微信公众号文章策划并生成多套风格不同的 16:9 封面，并按用户的采用/淘汰反馈维护个人封面案例库。用于用户给出公众号标题或正文要封面、头图、题图，或对已生成的封面候选给出采用、淘汰、打分等反馈时。不用于 ds 微信发布流程内的封面、归藏风格卡片、小红书 3:4 图文或 PPT。"
 ---
 
 # 微信公众号封面艺术指导
@@ -17,7 +17,8 @@ description: "为中文公众号文章策划并生成多套封面，按用户反
 4. 生成前阅读 [references/rejections.md](references/rejections.md)；需要查询具体淘汰提示词或反例时再读 [references/rejected-index.md](references/rejected-index.md)。
 5. 批量探索新模板时读取 [references/template-space.md](references/template-space.md) 和 [references/creative-system.md](references/creative-system.md)，只从尚未覆盖的空间写提示词。
 6. 生成前对新 prompt 做双向去重：既不能重跑已通过模板，也不能换色复刻已淘汰方向。
-7. 生成后使用 [references/quality-gate.md](references/quality-gate.md) 验收，并再次排除已知失败模式。
+7. 写 prompt 时套用 [references/prompt-builder.md](references/prompt-builder.md) 骨架。
+8. 生成后使用 [references/quality-gate.md](references/quality-gate.md) 验收，并再次排除已知失败模式。
 
 ## 输入
 
@@ -88,7 +89,7 @@ description: "为中文公众号文章策划并生成多套封面，按用户反
 
 ## 生成
 
-- 使用内置 `image_gen`，每个方向独立调用并使用独立 prompt。
+- 使用当前环境的图片生成工具（Codex 中为内置 `image_gen`），每个方向独立调用并使用独立 prompt。
 - 默认生成 16:9 PNG 横版封面。用户要求头条比例、方图或其他比例时再调整。
 - 短标题一般为 1-3 行。长标题先拆成 `小引题 / 大主判断 / 小解释层` 三个语义层，只放大核心判断；解释层允许再换一行，总物理行数可到 4 行。不要把长标题压成三行同字号文字墙，也不要为了守行数把整段字缩得一样小。
 - 默认只呈现用户标题，不添加副标题、栏目名、英文翻译、作者名或标签。
@@ -97,12 +98,28 @@ description: "为中文公众号文章策划并生成多套封面，按用户反
 
 ## 交付
 
-- 逐张通过质量门后保存到任务的最终输出目录。
+- 候选保存到 `outputs/YYYY-MM-DD-<slug>/`：图片命名 `NN-E01.png`（探索）/ `NN-R01.png`（复用）；同目录写 `prompts.json`（每张最终 prompt）、`manifest.json`（编号、名称、分组、参考案例、prompt）、`README.md`（标题、方向表、质量门结果）和一张拼版预览 `preview.jpg`。
+- 过程稿、检查脚本和断点记录放 `work/YYYY-MM-DD-<slug>/`（已被 git 忽略）；长批次在 `checkpoint.md` 记录进度，中断后从这里续跑。
+- 用户筛选前，候选批次只留本地，不提交、不推送。
 - 展示所有方向，并用一句话说明核心隐喻和视觉语言。
 - 不替用户选最佳方案，除非用户主动询问。
 - 用户反馈不喜欢时，优先识别审美原因并调整创意系统，不继续在失败模板上小修小补。
 - 只有用户明确说“采用、通过、实际使用、收录”时，才把新图加入正向资产库。加入时同步更新图片、最终提示词、案例档案、索引标签和路由。
 - 用户明确淘汰的结果只记录失败原因，不保存为正向案例。
+
+## 异常与降级
+
+- 当前环境没有图片生成工具时，不假装已生成：交付完整 `prompts.json` 与方向说明，并明确告知未出图。
+- 单张标题文字出错（错字、多字、标点变形、额外可读文字）时，针对该问题重生成，最多 2 次；仍不达标就照常交付，并在 README 中逐张写明残留问题，由用户决定。不做像素层贴字修补。
+- 标题缺失时只追问标题；正文缺失时可仅凭标题生成，但说明隐喻只基于标题。
+- 路由没有合适案例时直接原创，不硬套。
+
+## 已验证的易错点
+
+- 全角标点常被渲染成半角，例如 `（Ontology）` 变 `(Ontology)`；验收时逐字核对括号、引号和冒号。
+- 量具、仪表、书页、活字等道具容易长出可读数字或文字；prompt 里明确要求其表面无刻度、无字，并在验收时专门检查。
+- 长标题容易被压成等字号文字墙，或在语义短语中间断行；先按语义拆层，再写断行。
+- “科技文章”容易被默认翻译成黑底蓝紫霓虹；生成前核对整批明暗分布。
 
 ## 资产闭环
 
@@ -112,7 +129,7 @@ description: "为中文公众号文章策划并生成多套封面，按用户反
 2. 最终可复现提示词写入 `references/cases/Axx-<slug>.md`。
 3. 在 [references/approved-index.md](references/approved-index.md) 添加题材、视觉、配色和构图标签。
 4. 在 [references/router.md](references/router.md) 增加或强化对应路由。
-5. 若用户同时说明喜欢或不喜欢的原因，更新偏好或拒绝模式。
+5. 若用户同时说明喜欢或不喜欢的原因，更新偏好或拒绝模式；整轮反馈较多时另写 `references/feedback/roundNN-<slug>.md`，并在偏好中链接。
 
 新增淘汰案例时：图片可获得则复制到 `assets/rejected-covers/<batch>/`，最终提示词复制到 `references/rejected-prompts/<batch>/`，并更新负向索引。批次淘汰但缺少逐张原因时，标注证据强度，不擅自编造具体失败原因。
 

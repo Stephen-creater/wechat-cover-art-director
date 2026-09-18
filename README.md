@@ -135,6 +135,12 @@ cd "${CODEX_HOME:-$HOME/.codex}/skills/wechat-cover-art-director"
 git pull --ff-only origin main
 ```
 
+如果你本地就在维护这个仓库，建议改用软链接，让 Codex 始终加载工作副本、避免旧克隆落后：
+
+```bash
+ln -s /path/to/wechat-cover-art-director "${CODEX_HOME:-$HOME/.codex}/skills/wechat-cover-art-director"
+```
+
 安装完成后重新开始一个 Codex 任务，让 Skill 目录重新被发现。
 
 ## 使用方法
