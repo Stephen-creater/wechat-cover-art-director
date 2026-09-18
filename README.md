@@ -108,7 +108,7 @@ wechat-cover-art-director/
 └── references/
     ├── approved-index.md            # 正向案例总索引
     ├── cases/                       # 每个正向案例的完整提示词与复用说明
-    ├── feedback/                    # 每轮分层反馈，包含正向、中性与负向原始证据
+    ├── feedback/                    # 每轮原始反馈与逐轮历史档案（history.md）
     ├── preferences.md               # 已确认的个人审美偏好
     ├── router.md                    # 标题容量与模板路由逻辑
     ├── template-space.md            # 已通过、已淘汰与待探索空间
@@ -168,49 +168,9 @@ ln -s /path/to/wechat-cover-art-director "${CODEX_HOME:-$HOME/.codex}/skills/wec
 
 ## 默认审美原则
 
-- 默认不使用纯黑或大面积近黑背景。
-- 科技感不等于蓝紫霓虹、玻璃面板、机器人和发光大脑。
-- 吸引力来自一个强主体、清楚的尺度关系、克制配色和成熟排版。
-- 标题是第一视觉层级，通常控制在 1–3 行。
-- 标题居中时，标题块的几何中心必须同时落在画布水平与垂直中心。
-- 主体、高光、纹理和轨道不能直接穿过标题。
-- 文章中的核心例子优先于抽象科技隐喻。
-- 用户没有明确通过的候选不得进入正向资产库。
+默认亮底、一个强主体、成熟排版、只渲染用户标题；科技感不等于黑底蓝紫霓虹。完整结论见 [个人偏好](references/preferences.md)、[失败模式](references/rejections.md) 与 [质量门](references/quality-gate.md)。
 
-完整偏好见 [个人偏好记录](references/preferences.md)，详细检查项见 [质量门](references/quality-gate.md)。
-
-## 如何更新案例库
-
-### 新增正向案例
-
-1. 图片复制到 `assets/approved-covers/`。
-2. 最终提示词与证据强度写入 `references/cases/`。
-3. 更新 `references/approved-index.md`。
-4. 更新 `references/router.md` 与 `references/preferences.md`。
-5. 根据模板语法更新 `references/template-space.md`。
-
-### 新增负向案例
-
-1. 有图反例复制到 `assets/rejected-covers/<round>/`。
-2. 提示词保存到 `references/rejected-prompts/<round>/`。
-3. 更新 `references/rejections.md` 与 `references/rejected-index.md`。
-4. 用户没有说明逐张原因时，只标记“批次淘汰”，不擅自编造审美结论。
-
-## GitHub 同步纪律
-
-这个 Skill 不允许只更新本地。
-
-任何图片、案例、提示词、偏好、路由或规则变更，都必须完成：
-
-```text
-本地验证
-→ git status / diff 检查
-→ commit
-→ push origin main
-→ 从 GitHub 读回远程提交与关键文件
-```
-
-存在未提交或未推送的变更时，不得宣称 Skill 更新完成。
+案例库更新流程和 GitHub 同步规则见 [SKILL.md](SKILL.md) 的「资产闭环」与「GitHub 同步」。
 
 ## 重要边界
 
