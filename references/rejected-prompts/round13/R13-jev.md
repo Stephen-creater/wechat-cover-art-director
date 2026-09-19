@@ -1,12 +1,6 @@
-# Round 13 Jev：九个方向批次淘汰
+# Round 13 Jev：八个方向批次淘汰
 
 用户未给逐图原因，禁止推断；只禁止直接复刻本轮原组合。未采用图片仅保留本地。下列提示词来自本轮保存的方向记录；透明背景修复后缀为归档规范化版本。
-
-## F01 热度被放大
-
-```text
-Use case: ads-marketing. Create ONE finished Chinese WeChat cover, landscape 16:9, 1536x864 PNG. Exact ONLY readable title: “火爆全网的Jev到底是什么？” Preserve Jev case J e v and fullwidth ？. Natural phrase breaks allowed: 火爆全网的 / Jev / 到底是什么？. Strong typographic hierarchy with Jev dominant, supporting phrases smaller but readable. Original concept, no references. Based only on headline, do not assert any Jev features or depict an official logo. 珊瑚红底；巨大的真实放大镜斜跨右上，镜片对准标题中的 Jev；左下到中心的黑白混排标题，光学摄影，镜片放大含义是看清热词本体。 Keep text on clean background, minimum 6% safe margin. No extra text, labels, logos, watermark, QR, robots, chips, UI panels, decorative particles, neon cyber style. Render all Chinese accurately. Sophisticated coherent composition, single visual focus.
-```
 
 ## F02 揭开名字
 
