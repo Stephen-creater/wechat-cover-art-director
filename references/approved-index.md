@@ -51,3 +51,7 @@
 | A45 | 火爆全网的Jev到底是什么？ | 强正向, 最终采纳, Jev | 左文右墨团, 粉黑对比, 宋体与斜体衬线英文 | 暖粉, 黑 | `cases/A45-jev-ink-reveal.md` |
 | A46 | 火爆全网的Jev到底是什么？ | 正常通过, 后续更正, Jev | 放大镜框定英文, 黑白混排, 光学摄影 | 珊瑚红, 黑, 白 | `cases/A46-jev-magnifier.md` |
 | A47 | 如何用Grok bot 做爆款视频选题库 | 弱正向, 实际采用, 视频封面风, 深色 | 左字右漏斗, 立体海报字, 杂乱进整齐出 | 暗灰黑, 银白, 饱和金黄, 正红 | `cases/A47-grok-topic-library-funnel.md` |
+| A48 | 如何用Grok bot 做爆款视频选题库 | 强正向, 长期基调, 视频封面风, 深色 | 左字右漏斗, 柠檬黄主判断, 双层描边, 朱红强调 | 暗灰黑, 纯白, 柠檬黄, 朱红 | `cases/A48-grok-funnel-lemon-yellow.md` |
+| A49 | 如何用Grok bot 做爆款视频选题库 | 正常通过, 视频封面风, 深色 | 左字右漏斗, 平涂字, 整块硬投影, 无立体厚度 | 暗灰黑, 纯白, 金黄, 正红 | `cases/A49-grok-funnel-hard-shadow.md` |
+| A50 | 如何用Grok bot 做爆款视频选题库 | 正常通过, 视频封面风, 深色 | 左字右漏斗, 单层厚黑描边, 零发光 | 暗灰黑, 纯白, 暖金渐变, 正红 | `cases/A50-grok-funnel-black-outline.md` |
+
